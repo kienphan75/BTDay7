@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="Day7" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="327" height="73.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LOb-jR-cZg">
+                        <rect key="frame" x="10" y="10" width="67" height="53.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group" translatesAutoresizingMaskIntoConstraints="NO" id="WWP-Nj-E6u">
+                                <rect key="frame" x="0.0" y="0.0" width="67" height="53.5"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WWP-Nj-E6u" secondAttribute="bottom" id="4hL-x1-olX"/>
+                            <constraint firstAttribute="trailing" secondItem="WWP-Nj-E6u" secondAttribute="trailing" id="Aws-k6-W1O"/>
+                            <constraint firstAttribute="width" secondItem="LOb-jR-cZg" secondAttribute="height" multiplier="5:4" id="Kaw-GP-WSj"/>
+                            <constraint firstItem="WWP-Nj-E6u" firstAttribute="top" secondItem="LOb-jR-cZg" secondAttribute="top" id="ghz-3g-ERP"/>
+                            <constraint firstItem="WWP-Nj-E6u" firstAttribute="leading" secondItem="LOb-jR-cZg" secondAttribute="leading" id="jDZ-pY-Zpf"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rt4-Th-MfK">
+                        <rect key="frame" x="97" y="10" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="amC-DG-h9f">
+                        <rect key="frame" x="97" y="41" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LOb-jR-cZg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="124-1V-Pf8"/>
+                    <constraint firstItem="Rt4-Th-MfK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="49t-Gy-0Rr"/>
+                    <constraint firstItem="amC-DG-h9f" firstAttribute="top" secondItem="Rt4-Th-MfK" secondAttribute="bottom" constant="10" id="OpL-fm-FdK"/>
+                    <constraint firstItem="LOb-jR-cZg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cXn-ga-LPh"/>
+                    <constraint firstAttribute="bottom" secondItem="LOb-jR-cZg" secondAttribute="bottom" constant="10" id="j3f-Tl-au4"/>
+                    <constraint firstItem="Rt4-Th-MfK" firstAttribute="leading" secondItem="LOb-jR-cZg" secondAttribute="trailing" constant="20" id="mgH-eS-jsG"/>
+                    <constraint firstItem="amC-DG-h9f" firstAttribute="leading" secondItem="LOb-jR-cZg" secondAttribute="trailing" constant="20" id="y58-Vo-lTR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbContact" destination="amC-DG-h9f" id="9jW-y7-2sm"/>
+                <outlet property="lbName" destination="Rt4-Th-MfK" id="Nki-aK-k7P"/>
+            </connections>
+            <point key="canvasLocation" x="37.5" y="69"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group" width="25" height="25"/>
+    </resources>
+</document>
